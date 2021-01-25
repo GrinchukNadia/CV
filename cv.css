@@ -63,3 +63,6 @@ h4{
 .links_container a{
     font-weight: bolder;
 }
+.links_container .light{
+    font-weight: 400;
+}
