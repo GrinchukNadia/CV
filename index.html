@@ -1,181 +1,478 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Grinchuk Nadezda</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="cv.css" />
-</head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<body>
-  <div class="main">
-    <div class="header">
-      <h1>Nadezda Grinchuk</h1>
-      <h2 class="title-header">JUNIOR FRONTEND DEVELOPER</h2>
-    </div>
-    <div class="body">
-      <div class="left">
-        <div class="details">
-          <h2>DETAILS</h2>
-          <p>ADDRESS</p>
-          <p>Austria, Linz</p>
-          <br />
-          <p>PHONE NUMBER</p>
-          <p>+43 677 643 583 82</p>
-          <br />
-          <p>MAIL</p>
-          <a href="mailto:grennad991@gmail.com">grennad991@gmail.com</a>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        /* background: #eaeaea; */
+        color: #222;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-weight: 100;
+      }
+
+      .cv {
+        width: 794px;
+        min-height: 1123px;
+        margin: 30px auto;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+      }
+      .header {
+        display: flex;
+        margin: 40px 28px 0;
+        border-bottom: 1px solid #000;
+      }
+      .photo {
+        width: 250px;
+        height: 260px;
+        object-fit: cover;
+        margin-right: 28px;
+        overflow: hidden;
+      }
+
+      .header-text h1 {
+        font-size: 68px;
+        font-weight: 100;
+        line-height: 1.05;
+      }
+      .header-text .position {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 8px;
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+      }
+
+      .sidebar {
+        width: 93%;
+        border-right: 1px solid #000;
+        padding: 45px 20px 45px 28px;
+      }
+
+      .name {
+        font-size: 34px;
+        line-height: 1.05;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 12px;
+      }
+
+      .position {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+      }
+
+      .sidebar h2,
+      .main h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid currentColor;
+        margin: 0 0 14px 0;
+      }
+
+      .sidebar p,
+      .sidebar li,
+      .sidebar div {
+        font-size: 13px;
+        line-height: 1.45;
+        margin: 4px 0;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .main {
+        padding: 45px 38px 45px 20px;
+      }
+
+      .main h2 {
+        color: #000000;
+        margin-top: 0;
+      }
+
+      .item {
+        margin-bottom: 18px;
+      }
+
+      .item h3 {
+        font-size: 15px;
+        margin: 0 0 4px;
+        color: #222;
+      }
+
+      .date {
+        font-size: 13px;
+        font-weight: bold;
+        color: #555;
+        margin: 0 0 5px;
+      }
+
+      .item p {
+        font-size: 13.5px;
+        line-height: 1.45;
+        margin: 0;
+      }
+
+      .project-links {
+        margin-top: 5px;
+        font-size: 13px;
+      }
+      .project-links div {
+        margin-bottom: 3px;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .cv {
+          margin: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv">
+      <div class="header">
+        <div class="photo">
+          <img src="unnamed.jpg" alt="Profilbild" style="width: 100%" />
         </div>
-        <div class="skills">
-          <h2>SKILLS</h2>
-          <p>HTML/ HTML5</p>
-          <p>CSS/CSS3</p>
-          <p>SCSS</p>
-          <p>JavaScript (ES5, ES6)</p>
-          <p>GitHub</p>
-          <p>React</p>
-          <p>Redux</p>
-        </div>
-        <div class="lang">
-          <h2>LANGUAGES</h2>
-          <p>German - B1</p>
-          <p>English - B1</p>
-        </div>
-        <div class="links">
-          <h2>LINKS</h2>
-          <div class="links_container">
-            <a href="https://github.com/GrinchukNadia">GitHub</a>
-            <a class="light" href="https://github.com/GrinchukNadia">https://github.com/GrinchukNadia</a>
-            <a href="https://github.com/GrinchukNadia">Linkedin</a>
-            <a class="light"
-              href="https://www.linkedin.com/in/nadezdagrinchuk/">https://www.linkedin.com/in/nadezdagrinchuk/</a>
-            <a href="https://github.com/GrinchukNadia">CodeWars</a>
-            <a class="light"
-              href="https://www.codewars.com/users/GrinchukNadezda">https://www.codewars.com/users/GrinchukNadezda</a>
-            <a href="">Portfolio page with all projects</a>
-            <a class="light" href="https://grinchuknadia.github.io/Portfolio/">https://bit.ly/36dGNUt</a>
-          </div>
-        </div>
-        <div class="hobbies">
-          <h2>HOBBIES</h2>
-          <p>Learning languages, art, science.</p>
+        <div class="header-text">
+          <h1 class="name">Grinchuk<br />Nadezda</h1>
+          <div class="position">Junior Software Developer</div>
         </div>
       </div>
-      <div class="right">
-        <div class="profile">
-          <h2>PROFILE</h2>
-          <p>
-            I am studying web development. I have good skills in self-organizing
-            and information search.
-          </p>
-        </div>
-        <div class="education">
-          <h2>EDUCATION</h2>
-          <div class="education_block">
-            <h3>HTML/CSS course online</h3>
-            <h4>June 2020 – August 2020</h4>
+
+      <section class="content">
+        <aside class="sidebar">
+          <section>
+            <h2>Kontaktdaten</h2>
+            <p>Österreich, Linz</p>
+            <p>+43 677 643 583 82</p>
             <p>
-              Video tutorial course where I learned CSS and HTML. Got knowledge
-              of adaptive, cross-browser layout, flex, grid, working with
-              Photoshop, Figma, and Zeplin. Basic knowledge of Scss, JQuery.
+              <a href="mailto:grennad991@gmail.com">grennad991@gmail.com</a>
             </p>
-          </div>
-          <div class="education_block">
-            <h3>Foxminded mentoring</h3>
-            <h4>September 2020 – November 2020</h4>
-            <p>
-              Under the guidance of a mentor, I created a project for a bicycle
-              shop, where I could apply all the knowledge gained in the previous
-              course. I also continued to study Git, JQuery, JavaScript.
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>JavaScript/React online course</h3>
-            <h4>November 2020 – December 2020</h4>
-            <p>
-              Video tutorials course where I was studying JavaScript. I created
-              my own project of a food delivery store where I apply the
-              knowledge gained on the course.
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>React online course</h3>
-            <h4>December 2020 - February 2021</h4>
-            <p>
-              Video tutorials course on youtoube where I learning React till the
-              current time. I'm creating socialgroup project.
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>JavaScript course, practice</h3>
-            <h4>February 2021 - till this time</h4>
-            <p>
-              Deeper learning JavaScript on online course and videos from
-              YouTube
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>Ada & Florence I</h3>
-            <h4>6 February 2025 - 3 June 2025</h4>
-            <p>
-              Grundlagen aus den Bereichen Coding, KI, Kommunikation und
-              Empowerment. Der Gesamtkurs beinhaltet 84 Unterrichtseinheiten.
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>da & Florence III</h3>
-            <h4>9 Oktober 2025 - 11 Dezember 2025</h4>
-            <p>
-              Vertiefungskurs Ada & Florence.
-            </p>
-          </div>
-        </div>
-        <div class="education">
-          <h2>PROJECTS</h2>
-          <div class="education_block">
-            <h3>Porfolio page with some my projects</h3>
-            <a style="border-bottom: 1.5px solid" href="https://github.com/GrinchukNadia/Portfolio">GitHub
-              repository</a><br />
-            <a style="border-bottom: 1.5px solid" href="https://grinchuknadia.github.io/Portfolio/">Web page</a>
-          </div>
-          <div class="education_block">
-            <h3>Yoga course landing page</h3>
-            <a style="border-bottom: 1.5px solid" href="https://github.com/GrinchukNadia/Oyyo_lending_page">GitHub
-              repository</a><br />
-            <a style="border-bottom: 1.5px solid" href="https://grinchuknadia.github.io/Oyyo_lending_page/">Web page</a>
-            <p>
-              Worked with: Gulp, CSS, HTML, JavaScript, adaptive layout, Figma,
-              Zeplin, google map api, svg
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>Bicycle Shop</h3>
-            <a style="border-bottom: 1.5px solid" href="https://github.com/GrinchukNadia/Course-Foxminded">GitHub
-              repository</a><br />
-            <a style="border-bottom: 1.5px solid" href="https://grinchuknadia.github.io/Course-Foxminded/">Web page</a>
-            <p>
-              Worked with: adaptive, cross-browser layout, flex, grid,
-              Photoshop, Figma, and Zeplin, JQuery, JQuery UI, JavaScript,
-              facebook api, github.
-            </p>
-          </div>
-          <div class="education_block">
-            <h3>Food delivery web site</h3>
-            <a style="border-bottom: 1.5px solid" href="https://github.com/GrinchukNadia/foodDeliveryWebPage">GitHub
-              repository</a><br />
-            <a style="border-bottom: 1.5px solid" href="https://grinchuknadia.github.io/foodDeliveryWebPage/">Web
-              page</a>
-            <p>
-              Worked with: github, DOM, API, Ajax, ES6, JSON, event loop,
-              classes, local storage, getter/setter
-            </p>
-          </div>
-        </div>
-      </div>
+          </section>
+
+          <section>
+            <h2>BIS- KOMPETENZEN</h2>
+            <div>
+              Softwareentwicklungskenntnisse Internetentwicklungs- und
+              Administrationskenntnisse Frontend-Entwicklung Frontend Librarys
+              Entwicklung von Webapplikationen Debugging
+              Bürosoftware-Anwendungskenntnisse
+            </div>
+          </section>
+
+          <section>
+            <h2>Kenntnisse</h2>
+            <div>
+              <div>
+                <b>Frontend:</b> React, TypeScript, Redux Toolkit, React Router,
+                HTML5, CSS3, SCSS
+              </div>
+
+              <div>
+                <b>Backend:</b> Java, Spring Boot, REST APIs, Spring Security,
+                JPA / Hibernate
+              </div>
+
+              <div><b>Datenbanken:</b> PostgreSQL, MySQL</div>
+
+              <div>
+                <b>Tools:</b> Git, GitHub, IntelliJ IDEA, VS Code, Maven, Vitest
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Sprachen</h2>
+            <div><b>Deutsch</b> - fortgeschritten</div>
+            <div><b>Englisch</b> - fortgeschritten</div>
+            <div><b>Russisch</b> - Muttersprache</div>
+            <div><b>Ukrainisch</b> - Muttersprache</div>
+          </section>
+
+          <section>
+            <h2>Links</h2>
+            <div><a href="https://github.com/GrinchukNadia">GitHub</a></div>
+            <div>
+              <a href="https://www.linkedin.com/in/nadezdagrinchuk/"
+                >LinkedIn</a
+              >
+            </div>
+            <div>
+              <a href="https://grinchuknadia.github.io/Portfolio/"
+                >Portfolio-Webseite</a
+              >
+            </div>
+          </section>
+        </aside>
+
+        <main class="main">
+          <section>
+            <h2>Berufserfahrung</h2>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold">Billa Plus,</span> Linz –
+                <i>Thekenverkäuferin</i>
+              </h3>
+              <p class="date">2023–2025</p>
+              <p>
+                Unterstützung in der Konditorei, Mitarbeit im Brot- und
+                Backwarenbereich.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold">Home Deluxe,</span> Kiew,
+                Ukraine – <i>Büroassistentin</i>
+              </h3>
+              <p class="date">2020–2022</p>
+              <p>Bestellbearbeitung, Schriftverkehr, Pflege der Website.</p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold">Selbstständig,</span> Kiew,
+                Ukraine – <i>Unterstützung kleiner Unternehmen</i>
+              </h3>
+              <p class="date">2012–2018</p>
+              <p>
+                Betreuung von Social-Media-Kanälen, Organisation des
+                Warenversands.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Ausbildung</h2>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Talent Hub IT, ibis acam GmbH,</span
+                >
+                Linz
+              </h3>
+              <p class="date">März 2026 - Mai 2026</p>
+              <p>
+                IT-Ausbildung mit Schwerpunkt auf Java, Datenbanken und
+                Webentwicklung. Vertiefung der Kenntnisse durch
+                praxisorientierte Projektarbeit mit React, TypeScript, Spring
+                Boot und PostgreSQL.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Ada &amp; Florence I und III,</span
+                >
+                Linz
+              </h3>
+              <p class="date">Februar 2025 – Dezember 2025</p>
+              <p>
+                Grundlagen in Coding, KI, Kommunikation und Empowerment.
+                Zusätzlich praktische Vertiefung in React, TypeScript und Redux.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold">Pause in Ausbildung,</span>
+                Umzug nach Österreich
+              </h3>
+              <p class="date">2022 - 2024</p>
+              <p>Intensives Deutschlernen.</p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >GromCode University – JavaScript / React Online-Kurs</span
+                >
+              </h3>
+              <p class="date">April 2021 – Februar 2022</p>
+              <p>
+                Bearbeitung praktischer Aufgaben auf der Lernplattform. Inhalte:
+                HTML, CSS, JavaScript, React. Entwicklung einer responsiven
+                Website nach Designvorlage sowie Umsetzung einer
+                Google-Kalender-Applikation.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Foxminded Mentoring Programm,</span
+                >
+                Kiew, Ukraine
+              </h3>
+              <p class="date">Dezember 2020 – April 2021</p>
+              <p>
+                Unter Anleitung eines Mentors entwickelte ich ein Projekt für
+                einen Fahrradshop, in dem ich die im vorherigen Kurs erworbenen
+                Kenntnisse anwenden konnte. Außerdem vertiefte ich meine
+                Kenntnisse in Git, jQuery und JavaScript.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold">Online-Kurs HTML/CSS</span>
+              </h3>
+              <p class="date">Juni 2020 – August 2020</p>
+              <p>
+                Erwerb grundlegender Kenntnisse in HTML, CSS, responsive Design,
+                browserübergreifender Webentwicklung sowie im Umgang mit
+                Flexbox, Grid, Photoshop, Figma und Zeplin. Grundkenntnisse in
+                SCSS und jQuery.
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >National Pedagogical Dragomanov University,</span
+                >
+                Kiew, Ukraine - Bachelor of Biology
+              </h3>
+              <p class="date">2008 – 2012</p>
+              <p>Lehramtsstudium Biologie und Chemie.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Projekte</h2>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Portfolio mit ausgewählten Projekten</span
+                >
+              </h3>
+
+              <div class="project-links">
+                <div>
+                  <a href="https://github.com/GrinchukNadia/Portfolio"
+                    >GitHub repository</a
+                  >
+                </div>
+                <div>
+                  <a href="https://grinchuknadia.github.io/Portfolio/"
+                    >Web Page</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Trainer für Artikel (Webanwendung)</span
+                >
+              </h3>
+              <p>
+                Technologien und Tools: React, React Router, TypeScript, Redux
+                Toolkit, SCSS, HTML, zustandsbasierte Datenverwaltung,
+                LocalStorage, responsives Design, CI/CD (GitHub Actions).
+              </p>
+
+              <div class="project-links">
+                <div>
+                  <a href="https://github.com/GrinchukNadia/article-trainer"
+                    >GitHub repository</a
+                  >
+                </div>
+                <div>
+                  <a href="https://grinchuknadia.github.io/article-trainer/"
+                    >Web Page</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <h3>
+                <span style="font-weight: bold"
+                  >Landingpage für einen Yoga-Kurs</span
+                >
+              </h3>
+              <p>
+                Technologien und Tools: Gulp, HTML, CSS, JavaScript, responsive
+                Webentwicklung, Figma, Zeplin, Google Maps API, SVG.
+              </p>
+              <div class="project-links">
+                <div>
+                  <a href="https://github.com/GrinchukNadia/Oyyo_lending_page"
+                    >GitHub repository</a
+                  >
+                </div>
+                <div>
+                  <a href="https://grinchuknadia.github.io/Oyyo_lending_page/"
+                    >Web Page</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <h3><span style="font-weight: bold">Fahrradshop</span></h3>
+              <p>
+                Technologien und Tools: HTML, CSS, JavaScript, jQuery, jQuery
+                UI, responsive und browserübergreifende Webentwicklung, Flexbox,
+                Grid, Photoshop, Figma, Zeplin, Facebook API, GitHub.
+              </p>
+              <div class="project-links">
+                <div>
+                  <a href="https://github.com/GrinchukNadia/Course-Foxminded"
+                    >GitHub repository</a
+                  >
+                </div>
+                <div>
+                  <a href="https://grinchuknadia.github.io/Course-Foxminded/"
+                    >Web Page</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </section>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
